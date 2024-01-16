@@ -22,12 +22,16 @@ li {
 }
 
 .search-input{
-    width: 200px;
-    height: 20px;
+    width: 500px;
+    height: 30px;
     border-bottom: 2px solid;
     border-top: none;
     border-left: none;
     border-right: none;
+}
+
+.search-input:active{
+    border-bottom: 2px solid gray;
 }
 
 .chip{
