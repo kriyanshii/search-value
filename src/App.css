@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 100px auto;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.chip{
+    height: 15px;
+    width: fit-content;
+    border: 10px solid transparent;
+    border-radius: 20px;
+    background: rgb(247, 247, 160);
+}
+
+.chip span{
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: black;
+}

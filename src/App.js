@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import './App.css'; // Create an App.css file for styling
+import './App.css'; // Create an App.css file for styling
 
 const App = () => {
   const People = ['Apple All', 'Banana Ball', 'Cherry Chall', 'Date Doll', 'Fig Fall', 'Gig Gall', 'High Hall'];
@@ -42,11 +42,12 @@ const App = () => {
 
   return (
     <div>
+      <h1>Search People </h1>
       <div>
         {chips.map((chip, index) => (
           <div key={index} className="chip">
             {chip}
-            <span onClick={() => handleChipRemove(chip)}>X</span>
+            <span onClick={() => handleChipRemove(chip)}>x</span>
           </div>
         ))}
         <input
