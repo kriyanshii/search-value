@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 // import './App.css'; // Create an App.css file for styling
 
 const App = () => {
+  const People = ['Apple All', 'Banana Ball', 'Cherry Chall', 'Date Doll', 'Fig Fall', 'Gig Gall', 'High Hall'];
   const [inputValue, setInputValue] = useState('');
   const [chips, setChips] = useState([]);
-  const [filteredItems, setFilteredItems] = useState(['Apple All', 'Banana Ball', 'Cherry Chall', 'Date Doll', 'Fig Fall', 'Gig Gall', 'High Hall']);
+  const [filteredItems, setFilteredItems] = useState(People);
 
   const handleInputChange = (e) => {
     const value = e.target.value;
@@ -12,9 +13,10 @@ const App = () => {
     setInputValue(value);
 
     // Filter items based on input value
-    const filtered = filteredItems.filter(item =>
+    const filtered = People.filter(item =>
       item.toLowerCase().includes(value.toLowerCase())
     );
+    console.log(filteredItems)
     console.log(filtered)
     setFilteredItems(filtered);
   };
